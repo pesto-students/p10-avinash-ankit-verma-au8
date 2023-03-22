@@ -1,3 +1,4 @@
+/** Question-1 */
 const memoise = (func) => {
   const cache = {};
   return function (...args) {
