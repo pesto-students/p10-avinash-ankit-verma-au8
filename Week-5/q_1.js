@@ -49,7 +49,7 @@ function* executeTasksGenerator() {
   }
 }
 
-// Execute tasks using async/await
+/** Execute tasks using async/await */
 executeTasksAsync();
 
 // Execute tasks using generators
