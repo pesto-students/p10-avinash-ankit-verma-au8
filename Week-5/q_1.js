@@ -1,59 +1,59 @@
-/**
- * Task-1: Add 2 and 3
- * Task-2: Divide the result with 5
- * Task-3: Subtract 1 from result
- */
+function doTask1() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      console.log("Task 1 done");
+      resolve();
+    }, 1000);
+  });
+}
 
-/** With async await */
-// const doTask1 = async () =>
-//   new Promise((resolve) => {
-//     const result = 2 + 3;
-//     resolve(result);
-//   });
+function doTask2() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      console.log("Task 2 done");
+      resolve();
+    }, 2000);
+  });
+}
 
-// const doTask2 = async (number) =>
-//   new Promise((resolve) => {
-//     const result = number / 5;
-//     resolve(result);
-//   });
+function doTask3() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      console.log("Task 3 done");
+      resolve();
+    }, 1500);
+  });
+}
 
-// const doTask3 = async (number) =>
-//   new Promise((resolve) => {
-//     const result = number - 1;
-//     resolve(result);
-//   });
+async function executeTasksAsync() {
+  try {
+    console.log("Executing tasks asynchronously...");
+    await doTask1();
+    await doTask2();
+    await doTask3();
+    console.log("All tasks done!");
+  } catch (error) {
+    console.error(error);
+  }
+}
 
-// const executeTasks = async () => {
-//   const result = await doTask1();
-//   const result2 = await doTask2(result);
-//   const result3 = await doTask3(result2);
-//   console.log(result3);
-// };
+function* executeTasksGenerator() {
+  try {
+    console.log("Executing tasks using generators...");
+    yield doTask1();
+    yield doTask2();
+    yield doTask3();
+    console.log("All tasks done!");
+  } catch (error) {
+    console.error(error);
+  }
+}
 
-// executeTasks();
+// Execute tasks using async/await
+executeTasksAsync();
 
-/** With generators */
-
-// function* doTask1Gen() {
-//   const result = 2 + 3;
-//   yield result;
-// }
-
-// function* doTask2Gen(number) {
-//   const result = number / 5;
-//   yield result;
-// }
-
-// function* doTask3Gen(number) {
-//   const result = number - 1;
-//   yield result;
-// }
-
-// function* executeTasksWithGenerators() {
-//   const result = yield* doTask1Gen();
-//   const result2 = yield* doTask2Gen(result);
-//   yield* doTask3Gen(result2);
-// }
-// const taskGenerator = executeTasksWithGenerators();
-// console.log(taskGenerator.next());
-// console.log(taskGenerator.next(5));
+// Execute tasks using generators
+const taskGenerator = executeTasksGenerator();
+taskGenerator.next();
+taskGenerator.next();
+taskGenerator.next();
