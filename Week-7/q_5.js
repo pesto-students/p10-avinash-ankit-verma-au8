@@ -8,6 +8,11 @@
  * Output 1: 1
  */
 
+/**
+ * @param {number[]} arr
+ * @param {number} B
+ * @return {number}
+ */
 function findPair(arr, B) {
   const map = new Map();
   for (let i = 0; i < arr.length; i++) {
