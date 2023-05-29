@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  list-style-type: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-section {
+  height: calc(100% - 150px);
+  display: flex;
+}
+aside {
+  background-color: #f0f0f0;
+  height: 100%;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+aside > ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: black;
+}
+.songs-list {
+  width: 100%;
+}
+.collection-details {
+  background-color: #454545;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.title-section > h1 {
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.title-section > h2 {
+  font-size: 16px;
+  font-weight: 200;
+}
+.collection-controls > i {
+  font-size: 16px;
+  margin-right: 10px;
+}
+.collection-controls > i > span {
+  font-family: "Lato", sans-serif;
+}
+.content-section {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px 25px;
+}
+.songs-table {
+  color: black;
+  width: 100%;
+}
+.songs-table tr td {
+  font-size: 12px;
+}
+
+.songs-table tr {
+  height: 30px;
+}
+
+.songs-table tr:nth-of-type(2n + 2) {
+  background: #f0f0f0;
+}
+.cloud-sync {
+  text-align: center;
+}
+.cloud-sync > span {
+  border: 1px solid blue;
+}
+
+.player-section {
+  background-color: #43689b;
+  height: 150px;
+  display: flex;
+}
+.song-title-section > h1 {
+  font-size: 20px;
+  font-weight: 400;
+}
+.song-title-section > h2 {
+  font-size: 14px;
+  font-weight: 200;
+}
+.song-details {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.song-title-section {
+  padding-top: 50px;
+}
+.player-controls {
+  display: flex;
+  align-items: center;
+  padding-right: 50px;
+}
+.player-controls > ul {
+  display: flex;
+}
+
+.player-controls > ul > li {
+  padding: 0 80px;
+}
+.player-section > img {
+  width: 100px;
+  height: 100px;
+  padding-top: 25px;
+  padding-left: 20px;
+}

@@ -1,0 +1,16 @@
+{
+  "name": "week-5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "q_1.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
