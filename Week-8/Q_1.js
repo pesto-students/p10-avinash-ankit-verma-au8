@@ -1,3 +1,4 @@
+//Given a linked list of N nodes. The task is to reverse this list.
 var reverseList = function (head) {
   let prev = null;
   let current = head;
